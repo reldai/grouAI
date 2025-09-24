@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grou Employee Self Service AI Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">G</div>
+                    <span class="logo-text">Grou</span>
+                </div>
+                <h2 class="agent-title">Employee Self Service Agent</h2>
+            </div>
+
+            <!-- New Chat Button -->
+            <div class="new-chat-section">
+                <button class="new-chat-btn" id="newChatBtn">
+                    <span class="new-chat-icon">+</span>
+                    <span class="new-chat-text">New Chat</span>
+                </button>
+            </div>
+            
+            <div class="sidebar-content">
+                <!-- Projects Section -->
+                <div class="sidebar-section">
+                    <h3 class="section-title">Projects</h3>
+                    <div class="project-list">
+                        <div class="project-item">📊 Performance Review Q2 2025</div>
+                        <div class="project-item">📈 PIP & Development Plans</div>
+                        <div class="project-item">✅ Compliance Tracker</div>
+                    </div>
+                </div>
+
+                <!-- Agents Library Section -->
+                <div class="sidebar-section">
+                    <h3 class="section-title">Agents Library</h3>
+                    <div class="agent-categories">
+                        <div class="category-item active">
+                            <span class="category-icon">👤</span>
+                            <span class="category-text">Employee Self Service</span>
+                        </div>
+                        <div class="category-item">
+                            <span class="category-icon">🚀</span>
+                            <span class="category-text">Onboarding Offboarding</span>
+                        </div>
+                        <div class="category-item">
+                            <span class="category-icon">⭐</span>
+                            <span class="category-text">Performance Review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Chats Section -->
+                <div class="sidebar-section">
+                    <h3 class="section-title">Recent Chats</h3>
+                    <div class="chat-list">
+                        <div class="chat-item">Employee onboarding flow</div>
+                        <div class="chat-item">Performance review questions</div>
+                        <div class="chat-item">Payroll automation setup</div>
+                        <div class="chat-item">HR policy update draft</div>
+                        <div class="chat-item">Remote work guidelines</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+            <div class="chat-header">
+                <div class="user-info">
+                    <div class="user-avatar">U</div>
+                    <div class="user-details">
+                        <span class="user-name">Unggul Reywana</span>
+                        <span class="user-id">ID-G605 • Product Designer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="message ai-message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content">
+                        <p>Good afternoon. How can I help you today?</p>
+                    </div>
+                </div>
+
+                <!-- Quick Action Cards -->
+                <div class="quick-actions" id="quickActions">
+                    <div class="quick-action-card" data-action="payslip">
+                        <div class="action-icon">💰</div>
+                        <h4>Request Payslip</h4>
+                        <p>Download monthly payslips for payroll, tax filing, or loan applications.</p>
+                    </div>
+                    <div class="quick-action-card" data-action="leave">
+                        <div class="action-icon">📅</div>
+                        <h4>Check Leave Balance</h4>
+                        <p>View remaining annual leave, sick days, and upcoming leave entitlements.</p>
+                    </div>
+                    <div class="quick-action-card" data-action="letters">
+                        <div class="action-icon">📄</div>
+                        <h4>Request Official Letters and Documents</h4>
+                        <p>Ask for visa letters, loan application letters, recommendation or resignation letters.</p>
+                    </div>
+                    <div class="quick-action-card" data-action="personal">
+                        <div class="action-icon">👤</div>
+                        <h4>Updating Personal Data</h4>
+                        <p>Update address, phone number, emergency contact, or banking details.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="chat-input-container">
+                <div class="chat-input">
+                    <input type="text" id="messageInput" placeholder="What would you like to do?" />
+                    <button class="attach-btn" id="attachBtn">📎</button>
+                    <button class="send-btn" id="sendBtn">➤</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div class="typing-indicator hidden" id="typingIndicator">
+        <div class="message ai-message">
+            <div class="message-avatar">🤖</div>
+            <div class="message-content">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Forms -->
+    <div class="modal hidden" id="formModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Form</h3>
+                <button class="modal-close" id="modalClose">×</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic form content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

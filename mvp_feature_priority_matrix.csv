@@ -1,0 +1,16 @@
+Feature,Priority,Effort (Days),Business Value,Technical Risk
+Chat Interface,Critical,15,Very High,Medium
+Authentication,Critical,10,Very High,Low
+Payslip Requests,Critical,8,Very High,Low
+Leave Balance Check,Critical,6,Very High,Low
+Personal Data Updates,High,8,High,Low
+Employment Letters,High,10,High,Medium
+HRIS Integration,Critical,20,Very High,High
+Audit Logging,Critical,5,High,Low
+Mobile App,Medium,25,Medium,Medium
+Advanced Analytics,Low,15,Low,Medium
+Multi-language,Low,12,Medium,Low
+Voice Interface,Future,30,Medium,High
+Offline Mode,Future,20,Low,Medium
+Advanced Personalization,Medium,18,Medium,Low
+Admin Dashboard,Medium,12,Medium,Low
