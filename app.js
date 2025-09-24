@@ -1,9 +1,9 @@
 // Employee data from the application
 const employeeData = {
-  name: "Unggul Reywana",
+  name: "Nathaniel Matheson",
   id: "ID-G605",
   position: "Product Designer",
-  email: "unggul.reywana@grou.com",
+  email: "nate.matheson@grou.com",
   department: "Design",
   joinDate: "2020-01-15",
   currentAddress: "Jl. Sudirman No. 123, Jakarta",
